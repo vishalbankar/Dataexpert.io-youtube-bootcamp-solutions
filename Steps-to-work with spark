@@ -1,0 +1,16 @@
+We can actually use the Python and notebooks installations included in the spark-iceberg container included in the docker-compose to go through the labs.
+
+Just move or copy
+3-spark-fundamentals/src 
+3-spark-fundamentals/requirements.txt 
+to 
+3-spark-fundamentals/notebooks.
+
+Once you do that you can go to your notebooks endpoint http://localhost:8888/ and follow these instructions from there:
+
+Click on New>Terminal
+In the terminal that opens up move to the notebooks/notebooks directory with cd /home/iceberg/notebooks/notebooks
+Install requirements with pip install -r requirements.txt
+And finally verify it is all working with python3 -m pytest
+
+I hope this saves you a lot of headaches. Just remember (as usual) to save your homework or modifications in a different location before before making a forced git pull, otherwise you will lose your progress. 
